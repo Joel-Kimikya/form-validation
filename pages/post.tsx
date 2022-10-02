@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useRouter } from 'next/router';
 
-const signUp = () => {
+const Post = () => {
   // const route = useRouter();
 
   return (
@@ -24,22 +24,41 @@ const signUp = () => {
             {/* </button> */}
           </div>
         </div>
-        <div className='flex flex-row text-sm justify-around'>
-          <div className='flex flex-row items-center space-x-5'>
-            <label>First Name</label>
-            <input
-              type='text'
-              placeholder='Enter First Name'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-3 text-black w-2/3 rounded-md'
-            />
+        <div className='flex flex-col'>
+          <div className='flex flex-row text-sm justify-around'>
+            <div className='flex flex-row items-center space-x-5'>
+              <label>First Name</label>
+              <input
+                type='text'
+                placeholder='Enter First Name'
+                className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-3 text-black w-2/3 rounded-md'
+              />
+            </div>
+            <div className='flex flex-row items-center space-x-5'>
+              <label>Last Name</label>
+              <input
+                type='text'
+                placeholder='Enter Last Name'
+                className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-3 text-black w-2/3 rounded-md'
+              />
+            </div>
           </div>
-          <div className='flex flex-row items-center space-x-5'>
-            <label>Last Name</label>
-            <input
-              type='text'
-              placeholder='Enter Last Name'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-3 text-black w-2/3 rounded-md'
-            />
+          <div className='flex flex-row text-sm justify-around'>
+            <div className='flex flex-row items-center space-x-5'>
+              <label>UserName</label>
+              <input
+                type='text'
+                placeholder='Enter UserName'
+                className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-3 text-black w-2/3 rounded-md'
+              />
+            </div>
+            <div className='flex items-center space-x-5'>
+              <p>I am </p>
+              <input type='checkbox' />
+              Male
+              <input type='checkbox' />
+              Female
+            </div>
           </div>
         </div>
       </div>
@@ -47,4 +66,4 @@ const signUp = () => {
   );
 };
 
-export default signUp;
+export default Post;
