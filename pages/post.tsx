@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useRouter } from 'next/router';
 
-const SignUp = () => {
+const Post = () => {
   // const route = useRouter();
   return (
     <div className='bg-fuchsia-900 flex justify-center items-center h-screen'>
@@ -46,4 +46,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Post;
