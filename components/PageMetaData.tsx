@@ -4,7 +4,7 @@ import React from 'react';
 const PageMetaData = (): JSX.Element => {
   return (
     <Head>
-      <title>Ntavigwa Template</title>
+      <title>Form - Validation</title>
       <meta name='description' content='Ensemble Pour Le Changement - RDC' />
     </Head>
   );
