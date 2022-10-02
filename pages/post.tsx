@@ -1,9 +1,8 @@
 import React from 'react';
 // import { useRouter } from 'next/router';
 
-const signUp = () => {
+const Post = () => {
   // const route = useRouter();
-
   return (
     <div className='bg-fuchsia-900 flex justify-center items-center h-screen'>
       <div className='bg-white w-1/2 h-3/4 rounded-2xl shadow-2xl text-gray-600'>
@@ -17,7 +16,7 @@ const signUp = () => {
             <div> Sign In</div>
             {/* </button> */}
             {/* <button
-              onClick={() => route.push('/signup')}
+              onClick={() => route.push('/SignUp')}
               className='hover:text-fuchsia-900'
             > */}
             <div> Sign Up</div>
@@ -47,4 +46,4 @@ const signUp = () => {
   );
 };
 
-export default signUp;
+export default Post;
