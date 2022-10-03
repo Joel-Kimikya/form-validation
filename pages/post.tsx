@@ -52,7 +52,7 @@ const Post = () => {
             <textarea className='border-2 border-gray-200 focus:outline-none'></textarea>
           </div>
         </div>
-        <div className='flex justify-center my-4'>
+        <div className='flex justify-center my-4 space-x-5'>
           <div className='flex w-28 justify-center border-2 py-2 rounded-md hover:bg-fuchsia-100 transition ease-out duration-700 text-gray-700 font-bold'>
             <button>Sign In</button>
           </div>
