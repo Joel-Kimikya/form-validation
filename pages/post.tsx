@@ -24,52 +24,52 @@ const Post = () => {
           </div>
         </div>
         <div className='space-y-5'>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label>FirstName</label>
             <input
               type='text'
               placeholder='Enter FirstName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label>LastName</label>
             <input
               type='text'
               placeholder='Enter LastName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label>UserName</label>
             <input
               type='text'
               placeholder='Enter UserName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label> Email address</label>
             <input
               type='email'
               placeholder='Enter your email address'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label> Password</label>
             <input
               type='password'
               placeholder='Enter Password'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex justify-around items-center'>
+          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
             <label> Password Check</label>
             <input
               type='email'
               placeholder='Enter your email address'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
             />
           </div>
           <div className='flex flex-col m-5 space-y-3 capitalize text-sm'>

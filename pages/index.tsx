@@ -34,29 +34,29 @@ const Home: NextPage = (): JSX.Element => {
             </button>
           </div>
         </div>
-        <div className='flex flex-col space-y-7 m-8'>
-          <div className='flex flex-row items-center space-x-14'>
+        <div className='flex flex-col md:space-y-7 space-y-5 md:m-8 m-14'>
+          <div className='md:flex md:flex-row md:items-center md:space-x-14 flex flex-col'>
             <label>Username</label>
             <input
               type='text'
               placeholder='Enter Username'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex flex-row items-center space-x-16'>
+          <div className='md:flex md:flex-row md:items-center md:space-x-16 flex flex-col'>
             <label>Password</label>
             <input
               type='password'
               placeholder='Enter Password'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
             />
           </div>
-          <div className='flex flex-row items-center space-x-4'>
+          <div className='md:flex md:flex-row md:items-center md:space-x-4 flex flex-col'>
             <label>Password Check</label>
             <input
               type='password'
               placeholder='Check Password'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black w-2/3 rounded-md'
+              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
             />
           </div>
           <div className='flex flex-row items-center justify-center space-x-4'>
@@ -69,9 +69,5 @@ const Home: NextPage = (): JSX.Element => {
     </div>
   );
 };
-
-{
-  /* <button onClick={() => route.push('/post')}>Post</button> */
-}
 
 export default Home;
