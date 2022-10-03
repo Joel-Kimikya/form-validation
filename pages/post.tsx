@@ -16,7 +16,7 @@ const Post = () => {
               <div> Sign In</div>
             </button>
             <button
-              onClick={() => void route.push('/SignUp')}
+              onClick={() => void route.push('/post')}
               className='hover:text-fuchsia-900'
             >
               <div> Sign Up</div>
