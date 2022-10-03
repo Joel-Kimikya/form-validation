@@ -1,5 +1,7 @@
 // import React from 'react';
 import { useRouter } from 'next/router';
+import Button from '../components/Button';
+// import { type } from 'os';
 
 const Post = () => {
   const route = useRouter();
@@ -9,69 +11,42 @@ const Post = () => {
         <div className='flex flex-row justify-around items-center m-6 text-lg font-bold'>
           <div></div>
           <div className='flex flex-row space-x-7'>
-            <button
-              onClick={() => void route.push('/')}
-              className='hover:text-fuchsia-900'
-            >
-              <div> Sign In</div>
-            </button>
-            <button
-              onClick={() => void route.push('/post')}
-              className='hover:text-fuchsia-900'
-            >
-              <div> Sign Up</div>
-            </button>
+            <Button text='Sign In' onClick={() => void route.push('/')} />
+            <Button text='Sign Up' onClick={() => void route.push('/post')} />
           </div>
         </div>
         <div className='space-y-5'>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label>FirstName</label>
-            <input
-              type='text'
-              placeholder='Enter FirstName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label>LastName</label>
-            <input
-              type='text'
-              placeholder='Enter LastName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label>UserName</label>
-            <input
-              type='text'
-              placeholder='Enter UserName'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label> Email address</label>
-            <input
-              type='email'
-              placeholder='Enter your email address'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label> Password</label>
-            <input
-              type='password'
-              placeholder='Enter Password'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
-            <label> Password Check</label>
-            <input
-              type='email'
-              placeholder='Enter your email address'
-              className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
-            />
-          </div>
+          <InputField
+            label='FirstName'
+            placeholder='Enter FirstName'
+            type='text'
+          />
+          <InputField
+            label='LastName'
+            placeholder='Enter lastName'
+            type='text'
+          />
+          <InputField
+            label='UserName'
+            placeholder='Enter UserName'
+            type='text'
+          />
+          <InputField
+            label='Email address'
+            placeholder='Enter your email'
+            type='email'
+          />
+          <InputField
+            label='Password'
+            placeholder='Enter Password'
+            type='password'
+          />
+          <InputField
+            label='Password Check'
+            placeholder='Enter Password'
+            type='password'
+          />
+
           <div className='flex flex-col m-5 space-y-3 capitalize text-sm'>
             <label>why you want to be member, Fill in the section bellow</label>
             <textarea className='border-2 border-gray-200 focus:outline-none'></textarea>
@@ -88,3 +63,22 @@ const Post = () => {
 };
 
 export default Post;
+
+type Itext = {
+  label: string;
+  type: string;
+  placeholder: string;
+};
+
+const InputField = ({ label, type, placeholder }: Itext) => {
+  return (
+    <div className='md:flex md:flex-row md:justify-around md:items-center flex flex-col'>
+      <label>{label}</label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className='bg-white border-2 border-gray-200 py-1 focus:outline-none px-6 text-black md:w-2/3 rounded-md'
+      />
+    </div>
+  );
+};

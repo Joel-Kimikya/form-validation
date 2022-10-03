@@ -1,6 +1,7 @@
 // import React from 'react';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
+import Button from '../components/Button';
 
 /**
  * @author Ntavigwa Bashombe
@@ -20,18 +21,8 @@ const Home: NextPage = (): JSX.Element => {
         <div className='flex flex-row justify-around items-center mt-7 text-lg font-bold'>
           <div></div>
           <div className='flex flex-row space-x-7'>
-            <button
-              onClick={() => void route.push('/')}
-              className='hover:text-fuchsia-900'
-            >
-              <div> Sign In</div>
-            </button>
-            <button
-              onClick={() => void route.push('/post')}
-              className='hover:text-fuchsia-900'
-            >
-              <div> Sign Up</div>
-            </button>
+            <Button text='Sign In' onClick={() => void route.push('/')} />
+            <Button text='Sign Up' onClick={() => void route.push('/post')} />
           </div>
         </div>
         <div className='flex flex-col md:space-y-7 space-y-5 md:m-8 m-14'>
