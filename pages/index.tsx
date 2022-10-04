@@ -26,30 +26,22 @@ const Home: NextPage = (): JSX.Element => {
           </div>
         </div>
         <div className='flex flex-col md:space-y-7 space-y-5 md:m-8 m-14'>
-          <div className='md:flex md:flex-row md:items-center md:space-x-14 flex flex-col'>
-            <label>Username</label>
-            <input
-              type='text'
-              placeholder='Enter Username'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:items-center md:space-x-16 flex flex-col'>
-            <label>Password</label>
-            <input
-              type='password'
-              placeholder='Enter Password'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
-            />
-          </div>
-          <div className='md:flex md:flex-row md:items-center md:space-x-4 flex flex-col'>
-            <label>Password Check</label>
-            <input
-              type='password'
-              placeholder='Check Password'
-              className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
-            />
-          </div>
+          <InputSection
+            label='UserName'
+            type='text'
+            placeholder='Enter UserName'
+          />
+          <InputSection
+            label='Password'
+            type='password'
+            placeholder='Enter Password'
+          />
+          <InputSection
+            label='Password Check'
+            type='password'
+            placeholder='Check Password'
+          />
+
           <div className='flex flex-row items-center justify-center space-x-4'>
             <div className='flex w-28 justify-center border-2 py-2 rounded-md hover:bg-fuchsia-100 transition ease-out duration-700 text-gray-700 font-bold'>
               <button>Sign In</button>
@@ -62,3 +54,24 @@ const Home: NextPage = (): JSX.Element => {
 };
 
 export default Home;
+
+const InputSection = ({
+  label,
+  type,
+  placeholder,
+}: {
+  label: string;
+  type: string;
+  placeholder: string;
+}) => {
+  return (
+    <div className='md:flex md:flex-row md:items-center md:space-x-14 flex flex-col'>
+      <label>{label}</label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className='bg-white border-2 border-gray-200 py-2 focus:outline-none px-4 text-black md:w-2/3 rounded-md'
+      />
+    </div>
+  );
+};
